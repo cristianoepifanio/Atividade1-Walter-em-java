@@ -19,6 +19,18 @@ public class Questao2 {
         System.out.println("Digite sua altura: ");
         float altura = scanner.nextFloat();
         float IMC = peso / (altura * altura);
-        System.out.println("IMC é de: " + IMC);
+        if (IMC < 18.5f) {
+            System.out.println("Seu IMC é de: " + IMC + " você está ABAIXO DO PESO");
+        } else if (IMC < 25) {
+            System.out.println("Seu IMC é de: " + IMC + " você está com PESO NORMAL");
+        } else if (IMC < 30) {
+            System.out.println("Seu IMC é de: " + IMC + " você está com SOBRE PESO");
+        } else if (IMC < 35) {
+            System.out.println("Seu IMC é de: " + IMC + " você está OBESO LEVE");
+        } else if (IMC < 40) {
+            System.out.println("Seu IMC é de: " + IMC + " você está OBESO MODERADO");
+        } else if (IMC > 40) {
+            System.out.println("Seu IMC é de: " + IMC + " você está OBSESO MORBIDO SE CUIDE AMIGO");
+        }
     }
 }
