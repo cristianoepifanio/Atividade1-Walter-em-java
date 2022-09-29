@@ -18,5 +18,6 @@ public class Main {
         } else {
             System.out.println("A divisão entre "+x+" e "+y+" é de: "+(x/y));
         }
+
     }
 }
